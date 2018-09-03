@@ -418,7 +418,7 @@ h1 {
 	cursor: pointer;
 }
 
-.active {
+.services_bg.active {
 	position: absolute;
 	width: 100%;
 	height: 100%;
@@ -428,15 +428,15 @@ h1 {
 	transition-duration: 1s;
 }
 
-.active h3 {
+.services_bg.active h3 {
 	color: rgba(0, 0, 0, 0.83);
 }
 
-.active p {
+.services_bg.active p {
 	color: rgba(0, 0, 0, 0.75);
 }
 
-.active .cross {
+.services_bg.active .cross {
 	color: rgba(0, 0, 0, 0.4);
 }
 
@@ -461,7 +461,6 @@ h1 {
 
 .team_info {
 	position: absolute;
-	/*display: none;*/
 	width: calc(100% - 36px);
 	min-height: 55%;
 	top: 42%;
@@ -469,21 +468,46 @@ h1 {
 	box-shadow: 3px 6px 16px rgba(20, 20, 21, 0.18);
 	background-color: rgba(109, 246, 235, 0.98);
 	z-index: 2;
+	padding: 42px 38px;
+	text-align: left;
+	vertical-align: top;
+	opacity: 0;
 }
+
+.team_info:hover {
+	opacity: 1;
+}
+
 .triangle {
 	position: absolute;
-	font-size: 60px;
-	color: rgba(113, 246, 236, 0.97);
-	z-index: 2;
-	top: -35px;
+	z-index: 1;
+	top: -19px;
+	left: 11px;
+}
+
+.social a {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 12px;
+}
+
+.team_italic {
+	color: rgba(118, 112, 112, 0.95);
+	font-size: 15px;
+	font-style: italic;
+	letter-spacing: 0.45px;
+	text-transform: none;
+}
+
+.team_text {
+	color: rgba(0, 0, 0, 0.8);
+	font-size: 16px;
+	line-height: 1.5em;
+	letter-spacing: 0.16px;
 }
 
 .team_line_one .team_item:nth-child(1) {
 	background: url(team_1.jpg) 50% 50% no-repeat /cover;
-}
-
-.team_line_one .team_item:nth-child(1) .team_info {
-	
 }
 
 .team_line_one .team_item:nth-child(2) {
