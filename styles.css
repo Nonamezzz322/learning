@@ -62,7 +62,7 @@ h3 {
 	margin-bottom: 10px;
 }
 
-p {
+p:not(.subtitle) {
 	color: rgba(0, 0, 0, 0.75);
 	font-size: 16px;
 	line-height: 2em;
@@ -537,4 +537,44 @@ h1 {
 .team_line_two {
 	margin-bottom: 125px;
 }
+
+
+/*Sixth content block*/
+
+.teacher {
+	padding: 40px 0;
+	width: 100%;
+	padding-bottom: 125px;
+}
+
+.teacher_bg {
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	width: calc(38% - 3.5%);
+	padding-top: 32%;
+	margin-right: 7%;
+	background-color: #ecedef;
+	border-radius: 3px;
+}
+
+.teacher_photo {
+	width: calc(88% - 7%);
+	padding-top: 114%;
+	position: absolute;
+	top: -11.5%;
+	left: 9%;
+	background: url("team_3.jpg") no-repeat 50% 50% /cover;
+	box-shadow: 0 0 60px rgba(0,0,0,0.13);
+}
+
+.teacher_reviews {
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(62% - 3.5%);
+	padding-top: 32%;
+	background-color: #ecedef;
+	border-radius: 3px;
+}
+
 
